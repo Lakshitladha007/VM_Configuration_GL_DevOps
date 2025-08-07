@@ -1,7 +1,7 @@
 # 🚀 Steps to Set Up GitLab Runner on VM
 
 ### 1. Install GitLab Runner inside VM: <br>
-reference doc: https://docs.gitlab.com/runner/install/linux-repository/
+Reference doc: https://docs.gitlab.com/runner/install/linux-repository/ <br>
 Connect to your VM terminal and run:
 
 #### Add GitLab official repo
@@ -11,7 +11,7 @@ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/sc
 ![alt text](Screenshots/1.png)
 
 #### Install GitLab runner
-It installs latest Gitlab Version
+
 ```bash
 sudo apt-get install gitlab-runner
 ```
@@ -31,7 +31,7 @@ sudo apt install gitlab-runner=17.7.1-1 gitlab-runner-helper-images=17.7.1-1
 
 ### 2. (Optional) Install Docker inside VM if not installed
 If you plan to use the Docker executor, Docker must be available inside VM.<br>
-Install Docker natively inside WSL:<br>
+Install Docker natively inside VM:<br>
 ```bash
 sudo apt update
 sudo apt install docker.io -y
@@ -46,13 +46,13 @@ docker run hello-world
 ### 3. Register the runner
 Steps to get the token:<br>
 i> Go to your GitLab project, now:<br>
-    a> Settings → CI/CD → Runners section.<br>
-    b> Click Expand under Runners<br>
-    c> select "create project runners".<br>
+&nbsp;&nbsp;&nbsp;a> Settings → CI/CD → Runners section.<br>
+&nbsp;&nbsp;&nbsp;b> Click Expand under Runners<br>
+&nbsp;&nbsp;&nbsp;c> select "create project runners".<br>
     ![alt text](Screenshots/3.png)
-    d> and add runner details.<br>
+&nbsp;&nbsp;&nbsp;d> and add runner details.<br>
     ![alt text](Screenshots/4.png)
-    e> click on "Create runner" button at the bottom.<br>
+&nbsp;&nbsp;&nbsp;e> click on "Create runner" button at the bottom.<br>
     ![alt text](Screenshots/5.png)
 
 ii> Now, choose platform: (Choose LINUX under Operating Systems, since we are using LINUX VM)<br>
