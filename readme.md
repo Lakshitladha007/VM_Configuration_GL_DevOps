@@ -61,7 +61,6 @@ ii> Now, choose platform: (Choose LINUX under Operating Systems, since we are us
 iii> Now, run the following commands on VM terminal as shown on UI after choosing the platform.<br>
 Register the runner by running the step-1 command in VM, and fill the following details as prompted:
 ![alt text](Screenshots/7.png)
-Copy the "Registration Token"
 
 | Prompt                   | Example Response                                           |
 | ------------------------ | -----------------------------------------------------------|
